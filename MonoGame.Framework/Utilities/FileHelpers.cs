@@ -6,7 +6,7 @@ using System;
 using System.IO;
 using System.Text;
 
-namespace Microsoft.Xna.Framework.Utilities
+namespace MonoGame.Utilities
 {
     internal static class FileHelpers
     {
@@ -16,7 +16,7 @@ namespace Microsoft.Xna.Framework.Utilities
         public static readonly string ForwardSlashString = new string(ForwardSlash, 1);
         public static readonly char BackwardSlash = '\\';
 
-#if WINRT
+#if WINDOWS_UAP
         public static readonly char NotSeparator = ForwardSlash;
         public static readonly char Separator = BackwardSlash;
 #else
